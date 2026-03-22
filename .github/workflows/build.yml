@@ -895,6 +895,8 @@ jobs:
         run: |
           cat >> "$DEFCONFIG" << 'EOF'
           CONFIG_KSU=y
+          CONFIG_KSU_FULL_NAME_FORMAT="%TAG_NAME%-酸奶被次掉le."
+          CONFIG_KSU_MULTI_MANAGER_SUPPORT=y
           CONFIG_TMPFS_XATTR=y
           CONFIG_TMPFS_POSIX_ACL=y
           EOF
